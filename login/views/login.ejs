@@ -1,0 +1,15 @@
+<% include partials/header %>
+<a href="/" class="btn btn-primary">Back</a>
+<h1>Log-In Page</h1>
+<form action="/login" method="POST">
+    <div> <input type="text" name="reg[email]" placeholder="Enter Email" required> </div>
+    <div> <input type="password" name="reg[password]" placeholder="Enter Password" required> </div>
+    <div> <input type="submit" value="Sign-In"> </div>
+</form>
+<h6 style="color:green">
+    <%= msg %>
+</h6>
+<h6 style="color:red">
+    <%= eMsg %>
+</h6>
+<% include partials/footer %>

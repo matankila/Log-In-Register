@@ -1,0 +1,13 @@
+<% include partials/header %>
+<h1>Home Page</h1>
+<% if(token){ %>
+    <form method="POST" action="/delete?_method=delete">
+        <a href="/login" class="btn btn-primary"> LogOut </a>
+    </form>  
+<% } %>
+
+<% if(!token){ %>
+<a href="/login" class="btn btn-primary"> login </a>
+<a href="/register" class="btn btn-primary"> register </a>
+<% } %>
+<% include partials/footer %>
